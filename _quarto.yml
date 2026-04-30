@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "꿈을펴봐"
+  description: "한국 청소년이 AI를 만나는 방식, 그리고 창의가 자라나는 자리"
+  navbar:
+    left:
+      - href: index.qmd
+        text: 홈
+      - href: 01_학술논문/paper.qmd
+        text: 학술논문
+      - href: 02_정책보고서/policy.qmd
+        text: 정책보고서
+      - href: 03_백서/whitepaper.qmd
+        text: 백서
+      - href: 04_블로그/post.qmd
+        text: 블로그
+    right:
+      - icon: github
+        href: https://github.com/[USERNAME]/[REPO]
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 jinus · CC BY-NC-SA 4.0"
+    right: "분석 코드: MIT · 한국 공공데이터 100%"
+
+format:
+  html:
+    theme: minty
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    embed-resources: false
+    css: styles.css
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    lang: ko
+
+bibliography: 00_공통/인용.bib
+csl: https://www.zotero.org/styles/apa
+
+execute:
+  freeze: auto
+  warning: false
