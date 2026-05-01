@@ -32,9 +32,6 @@ format:
     number-sections: true
     code-fold: true
     embed-resources: true
-  pdf:
-    documentclass: article
-    geometry: margin=1in
 bibliography: ../00_공통/인용.bib
 license: "CC BY-NC-SA 4.0"
 ---
